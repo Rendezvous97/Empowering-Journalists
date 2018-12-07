@@ -116,6 +116,14 @@ user image has been used.
 
 ❖ In certain cases, the image used may be too generic or irrelevant in comparison to the title of the article in which case the reverse image search may not give URLs with similar titles. This could lead to false results as the distance value could cross the threshold but the article may not be fake at all.
 
+It is possible that this tool can missclassify fake image-text combinations to be reliable. This can be because:
+
+a. The image has been used in articles that have nothing to do with the text
+
+b. All or most of the journalist’s chosen “credible” urls are also guilty of spreading the same misinformation.
+
+The second case is also a limitation of the program which gives a journalist the power to choose their own credible sources. Therefore, the tool is only as good as the journalist using it.
+
 ------------------------------------------------------------------------------------------------------------------
 5. Future Scope and Conclusion
 ------------------------------------------------------------------------------------------------------------------
