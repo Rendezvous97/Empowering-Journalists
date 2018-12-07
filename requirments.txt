@@ -1,0 +1,8 @@
+os
+io
+sys
+bs4
+requests
+array
+six
+gensim
