@@ -17,7 +17,7 @@ pip install requirments.txt
 python journalisttool.py
 
 ------------------------------------------------------------------------------------------------------------------
------------------------------ The Journalists' Tool to Establish Image-Text Relavence ----------------------------
+The Journalists' Tool to Establish Image-Text Relavence 
 ------------------------------------------------------------------------------------------------------------------
 1. Problem
 ------------------------------------------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ user image has been used.
 ➢ Content analysis of the user image ➢ The best guess of the user image ➢ Entity analysis of the scraped titles
 
 ------------------------------------------------------------------------------------------------------------------
-5. Implementation Issues and Limitations
+4. Implementation Issues and Limitations
 ------------------------------------------------------------------------------------------------------------------
 
 ❖ The alternate text/caption for the image is either missing in which case nothing can be used or is too generic. If the caption is too generic then comparing it to the associated text may not give us a conclusive answer. We overcame this by taking the title of the article instead.
@@ -106,7 +106,7 @@ user image has been used.
 ❖ In certain cases, the image used may be too generic or irrelevant in comparison to the title of the article in which case the reverse image search may not give URLs with similar titles. This could lead to false results as the distance value could cross the threshold but the article may not be fake at all.
 
 ------------------------------------------------------------------------------------------------------------------
-6. Future Scope and Conclusion
+5. Future Scope and Conclusion
 ------------------------------------------------------------------------------------------------------------------
 
 It is evident that there is a need for a tool that empowers journalists and news consumers so that they can sift through trustworthy content and not be misinformed. By using the current tools which have been made available on the cloud (Google Vision and NLP API) we attempt to solve the current problem of fake news propagation. Through this report, we have showcased the relevance of such a tool which is both effective and empowers the user to be aware of trustworthy articles with respect to their understanding of reliability. Future scope for this project could be to create a mobile application and toolbar application that draws over other applications in order to derive the user image and associated title. Additionally, the program could sift through the entire article content to see which part pertains to the image to make the decision more accurate.
