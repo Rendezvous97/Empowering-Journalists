@@ -38,9 +38,11 @@ We believe that curbing this subset of fake news would involve providing the nec
 ------------------------------------------------------------------------------------------------------------------
 
 ● In our case, the user encodes the image path and associated text in the code. An extension can be made wherein these two elements are derived from social media applications and websites such as Facebook and Twitter.
+
 ● The user image is then run through Google’s Vision API that performs a reverse image search that outputs page URLs of websites that have used the same picture as the user image.
 
 ❖ Elements obtained after Step 1:
+
 ➢ A list of page URLs in which the user image has been used.
 
 ------------------------------------------------------------------------------------------------------------------
@@ -52,6 +54,7 @@ We believe that curbing this subset of fake news would involve providing the nec
 ● Credible sources are determined beforehand. The user or journalist has the ability to encode whichever source she believes is trustworthy within the program code as a list. We also provide a default credible list of news websites.
 
 ❖ Elements obtained after Step 2:
+
 ➢ A list of credible page URLs in which the user image has been used.
 
 ------------------------------------------------------------------------------------------------------------------
@@ -65,6 +68,7 @@ We believe that curbing this subset of fake news would involve providing the nec
 ● Our initial motivation was to extract the caption (or alternate text) used with each image but most websites choose not to add an alternate text or make it too generic for any meaning to be derived).
 
 ❖ Elements obtained after Step 3:
+
 ➢ A list of titles of the news articles from the credible page URLs in which the
 user image has been used.
 
@@ -81,7 +85,9 @@ user image has been used.
 ● In our code, we have added a threshold value of 1 after a significant number of trials. This means that any average word mover’s distance greater than 1 will be flagged and the user will be prompted to perform human verification for that image-text combination.
 
 ❖ Elements obtained after Step 4:
+
 ➢ Word Mover’s (WM) distances between each scraped title and the associated title.
+
 ➢ Average (WM) distances of the titles.
 
 ------------------------------------------------------------------------------------------------------------------
@@ -91,7 +97,12 @@ user image has been used.
 ● In order to be as helpful as possible to a journalist, our program provides the user a plethora of information to aid in manual verification. This information includes content analysis from the input image and entity analysis from the associated text. These elements of information are derived using Google’s Natural Language Processing API and Vision API. Content analysis provides a content category prediction that the image might be whereas the entity analysis predicts the subject of the text. Entity analysis also provides a ‘salience’ value which reflects the relevance of the object to the whole title.
 
 ❖ Elements obtained after Step 5:
-➢ Content analysis of the user image ➢ The best guess of the user image ➢ Entity analysis of the scraped titles
+
+➢ Content analysis of the user image 
+
+➢ The best guess of the user image 
+
+➢ Entity analysis of the scraped titles
 
 ------------------------------------------------------------------------------------------------------------------
 4. Implementation Issues and Limitations
